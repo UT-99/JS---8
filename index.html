@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="mainheading">JS - Handoson : 8 Array Of Objects</h1>
+
+    <div class="boxes">
+        <h1>Data Set To Be Used : </h1>
+        <pre class="code">
+        let studentRecords = [ {name: 'John', id: 123, marks : 98 },
+            {name: 'Baba', id: 101, marks : 23 },
+            {name: 'yaga', id: 200, marks : 45 },
+            {name: 'Wick', id: 115, marks : 75 } ] 
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 1.  We are interested in retrieving only the name of the students and all the names should be in caps.</h2>
+        <pre class="code">
+            let ques1Arrlength = studentRecords.length;
+            let newArray =[];
+            str = '';
+            for ( let i = 0 ; i < ques1Arrlength ; i++){
+                 str=studentRecords[i].name;
+                 str = str.toString().toUpperCase();     
+                 newArray.push(str);
+                
+            }
+            console.log(newArray)
+        
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 2.  Suppose we have the same dataset as above but this time we want to get the details of students who scored more than 50 marks.</h2>
+        <pre class="code">
+            const result = studentRecords.filter(word => word.marks > 50);
+            console.log(result);
+        
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 3: Retrieve the details of students who scored more than 50 marks and have id greater than 120.</h2>
+        <pre class="code">
+            const result2 = studentRecords.filter(word => word.marks > 50  && word.id > 120);
+            console.log(result2);
+            
+        </pre>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 4. Consider the same scenario we have discussed above, but this time we would like to know the sum total of the marks of the students.</h2>
+        <pre class="code">
+            let ques1Arrlength2 = studentRecords.length;
+            sum = 0;
+            for ( let i = 0 ; i < ques1Arrlength2 ; i++){
+                 sum = sum + parseInt(studentRecords[i].marks)    
+            
+            }
+            console.log(`Sum is ${sum}`)
+        </pre>
+    </div>
+   
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 5. This time we want to get only the names of the students who scored more than 50 marks from the same dataset used above.</h2>
+        <pre class="code">
+            let ques1Arrlength3 = studentRecords.length;
+            sum = 0;
+            newArray3=[];
+            for ( let i = 0 ; i < ques1Arrlength3 ; i++){
+                 if(studentRecords[i].marks > 50){
+                     newArray3.push(studentRecords[i].name)
+                }
+
+            } 
+            console.log(`Names of Students are :  ${newArray3}`)
+            
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 6.  This time we are required to print the sum of marks of the students with id > 120.</h2>
+        <pre class="code">
+            let ques1Arrlength3 = studentRecords.length;
+            sum = 0;
+            newArray3=[];
+            for ( let i = 0 ; i < ques1Arrlength3 ; i++){
+                 if(studentRecords[i].marks > 50){
+                     newArray3.push(studentRecords[i].name)
+                }
+
+            } 
+            console.log(`Names of Students are :  ${newArray3}`)
+            
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 7. This time we are required to print the total marks of the students with marks greater than 50 after a grace of 15 marks has been added to those students who scored less than 50.</h2>
+        <pre class="code">
+            Questions To be discussed with Handson Sir 
+            
+        </pre>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
