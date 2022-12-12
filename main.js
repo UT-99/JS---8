@@ -76,5 +76,51 @@ console.log(`Sum Of Stidents ID > 120 are  :  ${sum2}`)
 // Question 7  Solution 
 
 
+let totalMarks = 0 ;
+let ques1Arrlength5 = studentRecords.length;
+  
+for (let i  = 0 ; i < ques1Arrlength5 ; i++){
+    if (studentRecords[i].marks > 50){
+        totalMarks+= studentRecords[i].marks ;
+
+    }
+    else{
+        studentRecords[i].marks = studentRecords[i].marks+15;
+    }
+
+}
+console.log(`Total marks of Students with marks greater than 50 are : ${totalMarks}`);
+console.log(`New Array will  be : `, studentRecords);
+
+
+// Question 8  Solution
+
+function Student( name , classes , rollNo  ){
+        this.name = name;
+        this.classes = classes;
+        this.rollNo = rollNo;
+
+}
+
+// Creating Objects of student :
+
+let student1 = new Student("Utkarsh", 'B.Tech' , 121)
+let student2 = new Student("Harsh", 'M.Tech' , 1341)
+let student3 = new Student("Yash", 'B.A' , 1109)
+let student4 = new Student("Akarsh", 'M.Pharma' , 9876)
+let student5 = new Student("Utkarsha", 'PHD' , 1901)
+let student6 = new Student('Sparsh', 'LLB' , 2435)
+
+let arrayOfStudent = [];
+arrayOfStudent.push(student1)
+arrayOfStudent.push(student2)
+arrayOfStudent.push(student3)
+arrayOfStudent.push(student4)
+arrayOfStudent.push(student5)
+arrayOfStudent.push(student6)
+
+console.log("Student details are : ", arrayOfStudent);
+
+
 
 

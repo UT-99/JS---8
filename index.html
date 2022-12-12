@@ -135,11 +135,65 @@
     <div class="boxes">
         <h2>Ques. 7. This time we are required to print the total marks of the students with marks greater than 50 after a grace of 15 marks has been added to those students who scored less than 50.</h2>
         <pre class="code">
-            Questions To be discussed with Handson Sir 
+            let totalMarks = 0 ;
+            let ques1Arrlength5 = studentRecords.length;
+              
+            for (let i  = 0 ; i < ques1Arrlength5 ; i++){
+                if (studentRecords[i].marks > 50){
+                    totalMarks+= studentRecords[i].marks ;
+            
+                }
+                else{
+                    studentRecords[i].marks = studentRecords[i].marks+15;
+                }
+            
+            }
+            console.log(`Total marks of Students with marks greater than 50 are : ${totalMarks}`);
+            console.log(`New Array will  be : `, studentRecords);
+            
+        
             
         </pre>
     </div>
 
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 8 
+            Create 6 objects , each object will have name, class, roll no as properties. Store these objects in an array of objects. </h2>
+        <pre class="code">
+            function Student( name , classes , rollNo  ){
+                    this.name = name;
+                    this.classes = classes;
+                    this.rollNo = rollNo;
+            
+            }
+            
+            // Creating Objects of student :
+            
+            let student1 = new Student("Utkarsh", 'B.Tech' , 121)
+            let student2 = new Student("Harsh", 'M.Tech' , 1341)
+            let student3 = new Student("Yash", 'B.A' , 1109)
+            let student4 = new Student("Akarsh", 'M.Pharma' , 9876)
+            let student5 = new Student("Utkarsha", 'PHD' , 1901)
+            let student6 = new Student('Sparsh', 'LLB' , 2435)
+            
+            let arrayOfStudent = [];
+            arrayOfStudent.push(student1)
+            arrayOfStudent.push(student2)
+            arrayOfStudent.push(student3)
+            arrayOfStudent.push(student4)
+            arrayOfStudent.push(student5)
+            arrayOfStudent.push(student6)
+            
+            console.log("Student details are : ", arrayOfStudent);
+     </pre>
+    </div>
+
+    <h1 class="mainheading">*****************</h1>
 
 
     <script src="main.js"></script>
